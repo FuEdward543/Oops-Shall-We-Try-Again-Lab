@@ -1,5 +1,7 @@
 #pragma once
 
 #include <string>
+#include <iostream>
+using namespace std;
 
-std::string oops();
+int oops(const int lowerBound, const int upperBound, const string &promptInput, const string &invalidInput);

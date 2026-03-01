@@ -3,5 +3,5 @@
 #include "src/oops.hpp"
 
 int main() {
-  // Your driver program goes here
+  oops(0, 2, "Please input an integer: ", "Your value is not valid");
 }

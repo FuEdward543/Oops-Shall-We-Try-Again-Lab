@@ -1,5 +1,20 @@
 #include <string>
+#include <iostream>
+using namespace std;
 
-std::string oops() {
-   return "You can delete this function and put your code in this file!";
+int oops(const int lowerBound, const int upperBound, const string &promptInput, const string &invalidInput) {
+   int inputInt;
+   cout << promptInput << endl;
+   cin >> inputInt;
+
+   while(inputInt < lowerBound||inputInt > upperBound) {
+      int InputIntLoop;
+      cout << invalidInput << endl << promptInput;
+      cin >> InputIntLoop;
+
+      inputInt = InputIntLoop;
+   }
+   cout << "The value chosen by the user is " << inputInt << endl;
+
+   return inputInt;
 }
